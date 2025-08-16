@@ -1,0 +1,30 @@
+{
+  "name": "MEP Contact App",
+  "description": "A web application to contact EU Parliament Members about AI Whistleblower Protection Act",
+  "repository": "https://github.com/your-username/mep-contact-app",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["flask", "python", "mep", "eu-parliament", "ai-policy"],
+  "image": "heroku/python",
+  "env": {
+    "FLASK_ENV": {
+      "description": "Flask environment",
+      "value": "production"
+    },
+    "SECRET_KEY": {
+      "description": "Secret key for Flask sessions",
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
+
